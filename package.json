@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "file": "node lib/separator.js --message='WebPack Build'; npm run build; node lib/separator.js --message='File Output'; node"
+    "await": "node lib/separator.js --message='WebPack Build'; npm run build; node lib/separator.js --message='File Output'; node dist/await.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
     "webpack": "^2.2.0",
     "yargs": "^6.6.0"
   }

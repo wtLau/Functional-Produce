@@ -8,20 +8,15 @@ npm install
 
 ## Usage
 
-To allow full use of ES6 (and even some ES7) capabilities, we use webpack to build our files.
-
-The working files live in `/src`, and tranpiled files are generated in `/dist`.
-
-To build:
+Both `src/callbacks.js` and `src/promises.js` can be run with vanilla Node.
 
 ```bash
-npm run build
+node src/callbacks.js
+node src/promises.js
 ```
 
-To build and run a file:
+`/src/await.js` uses some ES7 capabilities, so we need to transpile it with WebPack. To run, use:
 
 ```bash
-npm run file -- dist/callbacks.js
-npm run file -- dist/promises.js
-npm run file -- dist/await.js
+npm run await
 ```
