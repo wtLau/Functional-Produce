@@ -1,4 +1,4 @@
-# Asynchronous Programming Playground
+# ES.Next Programming Playground
 
 ## Setup
 
@@ -6,18 +6,24 @@
 npm install
 ```
 
+## Directory Structure
+
+Write your code in the `src` directory.
+When it is compiled, it will be placed in the `compiled` directory.
+
 ## Usage
 
-Both `src/callbacks.js` and `src/promises.js` can be run with vanilla Node.
+This playground uses Babel to ensure that all the newest ES features are supported.
+
+Use the `npm run file` script to run a file.
+This will run `gulp` and then execute the file provided as an argument.
+
+__Make sure you execute files in the `compiled` directory, not the `src` directory.__
 
 ```bash
-node src/callbacks.js
-node src/promises.js
-```
+# Pattern
+npm run file -- compiled/**/[FILENAME]
 
-`/src/await.js` will use some ES2017 capabilities, so we need to run it with a compatibility flag.
-
-To run, use:
-```bash
-node --harmony-async-await src/await.js
+# Example
+npm run file -- compiled/src/demo.js
 ```
