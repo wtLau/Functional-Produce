@@ -59,4 +59,17 @@ const data = [
 
 const newData = data.countFruit().stockUp(7).explain();
 
+const fruitObj = {};
+
+data.forEach(function(fruit) {
+  var f= fruit [0];
+  var count = fruit [1];
+
+  if (fruitObj[f]) 
+    fruitObj[f] += count;
+  else 
+    fruitObj[f] = count;
+  return fruitObj
+})
+
 console.log (newData)
