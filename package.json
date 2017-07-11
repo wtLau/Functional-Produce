@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "file": "gulp; node",
-    "start": "gulp && node ./compiled/app.js"
+    "start": "gulp && node ./compiled/src/app.js"
   },
   "keywords": [],
   "author": "",
