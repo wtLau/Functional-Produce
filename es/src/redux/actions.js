@@ -3,9 +3,17 @@
 export const SET_GROCERY_LIST_DATA      = 'SET_GROCERY_LIST_DATA'
 export const GENERATE_COUNTED_LIST      = 'GENERATE_COUNTED_LIST'
 export const GENERATE_STOCK_UP_LIST     = 'GENERATE_STOCK_UP_LIST'
+export const ADD_GROCERY_LIST           = 'ADD_GROCERY_LIST'
 
 
 // Action Creators
+
+export function addGoceryList(list) {
+  return {
+    type:     ADD_GROCERY_LIST,
+    payload:  list
+  }
+}
 
 export function setGroceryListData(data) {
   return {
@@ -25,4 +33,5 @@ export function generateStockedUpList() {
     type:     GENERATE_STOCK_UP_LIST
   }
 }
+
 
