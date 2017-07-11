@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "file": "gulp; node"
+    "file": "gulp; node",
+    "start": "gulp && node ./compiled/app.js"
   },
   "keywords": [],
   "author": "",
@@ -35,5 +36,8 @@
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
     "yargs": "^6.6.0"
+  },
+  "dependencies": {
+    "redux": "^3.7.1"
   }
 }
