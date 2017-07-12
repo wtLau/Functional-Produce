@@ -1,5 +1,5 @@
 function GroceryList(list) {
-    
+    this.id = id,
     this.state = {
         data: list,
         originalList: {},

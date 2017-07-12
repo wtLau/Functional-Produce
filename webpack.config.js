@@ -1,4 +1,5 @@
 module.exports = {
+  devtool: 'inline-source-map',
   entry: './es/src/app.js',
   output: {
     filename: './compiled/app.js'
@@ -11,3 +12,11 @@ module.exports = {
     ]
   }
 }
+
+
+
+
+
+
+
+

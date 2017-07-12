@@ -15,20 +15,17 @@ export function addGroceryList(list) {
     id:       nextListId++
   }
 }
-
 export function setGroceryListData(data) {
   return {
     type:     SET_GROCERY_LIST_DATA,
     payload:  data
   }
 }
-
 export function generateCountedList() {
   return {
     type:     GENERATE_COUNTED_LIST
   }
 }
-
 export function generateStockedUpList() {
   return {
     type:     GENERATE_STOCK_UP_LIST

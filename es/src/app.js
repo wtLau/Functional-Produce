@@ -1,9 +1,6 @@
 import store from './redux/store'
-import { addGroceryList } from './redux/actions'
+import { addGroceryList, generateStockedUpList } from './redux/actions'
 
-
-let unsubscribe = store.subscribe(() =>
-  console.log(JSON.stringify(store.getState())))
 
 store.dispatch(addGroceryList([
     ['apples', 73],
@@ -21,8 +18,4 @@ store.dispatch(addGroceryList([
     ['oranges', 86],
 ]))
 
-// store.dispatch(generateStockedUpList({ id: 1, add: 10}));
-
-
-// Flush all state changes
-unsubscribe();
+store.dispatch(generateStockedUpList({ id: 1, add: 10}));
