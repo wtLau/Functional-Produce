@@ -1,12 +1,11 @@
-import { createStore }     from 'redux'
+import { createStore, applyMiddleware }     from 'redux'
 import { GroceryListApp } from './reducer'
 import logger from 'redux-logger'
 
 
-const store = createStore(
-  reducer,
+export default createStore(
+  GroceryListApp,
   applyMiddleware(logger)
 )
 
 
-export default createStore(GroceryListApp) 
