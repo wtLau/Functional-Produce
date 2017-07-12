@@ -7,11 +7,12 @@ export const ADD_GROCERY_LIST           = 'ADD_GROCERY_LIST'
 
 
 // Action Creators
-
+let nextListId = 0;
 export function addGoceryList(list) {
   return {
     type:     ADD_GROCERY_LIST,
-    payload:  list
+    payload:  list,
+    id:       nextListId++
   }
 }
 
